@@ -1,0 +1,30 @@
+# --- Large data (re-downloadable, too big for GitHub) ---
+dataset/
+*.zip
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# --- Training artifacts (weights kept, the rest is regenerable) ---
+runs/**/results.csv
+runs/**/results.png
+runs/**/args.yaml
+runs/**/events.out.tfevents.*
+runs/**/weights/last.pt
+runs/predictions/
+runs/val-*/
+runs/test_photo/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- OS / editor ---
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/
